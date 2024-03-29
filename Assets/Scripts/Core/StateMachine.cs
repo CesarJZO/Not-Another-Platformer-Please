@@ -30,7 +30,7 @@ namespace Core
             CurrentState = new NullState();
         }
 
-        private class NullState : State<T>
+        private sealed class NullState : State<T>
         {
             public NullState() : base(null, null) { }
 
